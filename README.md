@@ -68,3 +68,25 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### Add these packages to package.json:-
+"@emotion/react": "^11.10.0",
+"@emotion/styled": "^11.10.0",
+"@mui/icons-material": "^5.8.4",
+"@mui/material": "^5.9.3",
+"axios": "^0.27.2",
+"react": "^18.2.0",
+"react-dom": "^18.2.0",
+"react-player": "^2.10.1",
+"react-router-dom": "^6.3.0",
+"react-scripts": "^5.0.1"
+
+## Then run this command:-
+npm install ---legacy-peer-deps
+
+## Need to use NodeJS v16.0.0 to run app - use nvm to change to this version
+nvm install v16.0.0
+
+Use a version of nvm:-
+nvm use v16.0.0
