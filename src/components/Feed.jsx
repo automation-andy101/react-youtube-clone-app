@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Box, Stack, Typography } from '@mui/material';
 
 import { Videos, SideBar } from './index.js';
-import { fetchFromAPI } from '../utils/FetchFromAPI.js';
+import { fetchFromAPI } from '../utils/fetchFromAPI.js';
 
 
 const Feed = () => {
@@ -45,9 +45,14 @@ const Feed = () => {
       </Box>
 
       <Box p={2} sx={{ overflow: 'auto', height: '90vh', flex: 2 }}>
-          <Typography variant='h4' fontWeight='bold' mb={2} sx={{
-            color: 'white'
-          }}>
+          <Typography 
+            variant='h4' 
+            fontWeight='bold' 
+            mb={2} 
+            sx={{
+              color: 'white'
+            }}
+          >
             {selectedCategory} <span style={{ color: '#F31503' }}>videos</span>
           </Typography>
 
